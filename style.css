@@ -1,0 +1,117 @@
+/*  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    background: #1d1d1d;
+    border-radius: 0;
+}
+.card{
+    width: 400px;
+    height: 460px;
+    background: rgb(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.front_section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("https://cdn.pixabay.com/photo/2023/04/14/21/38/wallpaper-7926098_960_720.jpg") no-repeat;
+    background-size: cover;
+    transition: 0.5s ease-out;
+    z-index: 2;
+}
+.card:hover .front_section{
+    transform: translateX(-25%) translateY(-20%);
+    transition-duration: 0.5s;
+}
+.back_section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: aliceblue;
+    z-index: 1;
+}
+.team_info{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background: inherit;
+    gap: 0.2rem;
+}
+.fullname{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #1d1d1d;
+}
+.position{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+    margin-bottom: 1rem;
+}
+.social_links{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.social_links a{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgb(7, 152, 152), rgb(156, 6, 156));
+    color: #f9f9f9;
+    border: 2px solid #08d8e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    transition: all 0.5s ease-out;
+}
+.social_links a:hover{
+    transform: scale(1.2);
+    background: linear-gradient(45deg, rgb(7, 152, 152), rgb(156, 6, 156));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* End */
